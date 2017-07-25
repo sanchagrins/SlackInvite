@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from django.core.urlresolvers import reverse
-from django.contrib.staticfiles.testing import LiveServerTestCase  
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase 
  
- 
-class HomeNewVisitorTest(LiveServerTestCase): 
- 
+class HomeNewVisitorTest(StaticLiveServerTestCase): 
     def setUp(self):
         self.browser = webdriver.Firefox()
         self.browser.implicitly_wait(3)
@@ -26,4 +24,4 @@ class HomeNewVisitorTest(LiveServerTestCase):
         self.browser.get(self.get_full_url("home"))
         h1 = self.browser.find_element_by_tag_name("h1")
         self.assertEqual(h1.value_of_css_property("color"), 
-                         "rgba(200, 50, 255, 1)")
+                         "rgb(255, 255, 255)")
