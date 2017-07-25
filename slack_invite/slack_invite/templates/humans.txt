@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Stephen Sanchagrin -- Developer -- @sanchagrins
 
 # THANKS
 
-    <name>
+    Marina Mele and Quentin Watt
 
 # TECHNOLOGY COLOPHON
 
+    Django
     HTML5, CSS3
+    Twitter Bootstrap
     jQuery, Modernizr

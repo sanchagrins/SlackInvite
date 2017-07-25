@@ -1,3 +1,13 @@
+# Coverage Files
+.coverage
+.htmlcov
+
+# Django Files
 db.sqlite3
 __pycache__
+
+# Sublime Files
 SlackInvite.sublime-workspace
+
+# Sphinx Files
+docs/_build/
