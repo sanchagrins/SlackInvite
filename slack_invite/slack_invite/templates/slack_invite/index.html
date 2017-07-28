@@ -1,2 +1,20 @@
 {% extends "base.html" %}
+{% load bootstrap3 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% bootstrap_messages %}
+
 {% block head_title %}Slack-Invite{% endblock %}
+
+{# Display a form #}
+{% block invite_form %}
+<form action="/url/to/submit/" method="post" class="form">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Join Team!</button>
+    {% endbuttons %}
+</form>
+{% endblock %}
