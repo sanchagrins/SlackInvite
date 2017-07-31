@@ -18,8 +18,8 @@ def home(request):
             return HttpResponseRedirect('/thanks')
     else:
         form = InviteForm()
-
-    return render(request, "slack_invite/index.html", {'form': form})
+        community = config.community
+    return render(request, "slack_invite/index.html", {'form': form, 'community': community})
 
 def home_files(request, filename):
     return render(request, filename, {}, content_type="text/plain")

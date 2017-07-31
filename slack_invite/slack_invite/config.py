@@ -17,5 +17,5 @@ def get_env_variable(var_name):
 slack_token = get_env_variable('SLACK_TOKEN')
 
 # Set your community name and slack_url below
-community = 'Team-Name-Config'
+community = 'Team-Name'
 slack_url = 'django-slackinvite.slack.com'

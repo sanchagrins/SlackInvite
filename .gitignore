@@ -11,3 +11,6 @@ SlackInvite.sublime-workspace
 
 # Sphinx Files
 docs/_build/
+
+# Selnium Files
+geckodriver.log
