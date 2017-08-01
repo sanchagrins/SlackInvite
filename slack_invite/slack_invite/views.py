@@ -23,3 +23,9 @@ def home(request):
 
 def home_files(request, filename):
     return render(request, filename, {}, content_type="text/plain")
+
+def handler404(request):
+    reponse = render_to_response('404.html', {},
+            context_instance=RequestContext(request))
+    reponse.status_code = 404
+    return reponse
