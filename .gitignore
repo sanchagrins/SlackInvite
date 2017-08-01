@@ -14,3 +14,6 @@ docs/_build/
 
 # Selnium Files
 geckodriver.log
+
+#Static Files
+slack_invite/slack_invite/staticfiles
