@@ -3,7 +3,7 @@ from .base import *
 
 DEBUG = False
 ALLOWED_HOSTS = ['django-slack-invite.herokuapp.com','*']
-print(production.py)
+print("production.py")
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
