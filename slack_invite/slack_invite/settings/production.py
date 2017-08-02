@@ -2,7 +2,7 @@
 from .base import *
 
 DEBUG = False
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'

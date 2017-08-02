@@ -1,1 +1,1 @@
-web: gunicorn slack_invite.wsgi
+web: python manage.py collectstatic --noinput; gunicorn slack_invite.wsgi
