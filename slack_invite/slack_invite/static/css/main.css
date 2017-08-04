@@ -4,6 +4,7 @@
    Author's custom styles
    ========================================================================== */
 
+
 html,body{
     margin: 0;
     padding: 0;
@@ -28,17 +29,11 @@ span {
     text-transform: uppercase;
 }
 
+.img-responsive {
+    max-width: 150px;
+}
+
 .h1_upper {
     text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
 
