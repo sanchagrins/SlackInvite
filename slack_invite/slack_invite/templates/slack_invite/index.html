@@ -7,7 +7,7 @@
 
 {# bootstrap_messages #}
 
-{% block head_title %}Slack-Invite{% endblock %}
+{% block head_title %}Django Slack-Invite{% endblock %}
 
 {% block body_text %}
 <img class="img-responsive center-block"  src="{% static 'img/Slack_Mark_Monochrome_WhiteSmall.svg' %}" alt="Slack Logo">
@@ -16,15 +16,11 @@
 
 {# Display the form #}
 {% block invite_form %}
-                <div class="row">
-                    <div class="col-sm-4 col-sm-offset-4">
                       <form action="." method="post" class="form">
                       {% csrf_token %}
                       {% bootstrap_form form %}
                       {% buttons %}
-                        <button type="submit" class="btn btn-primary">Join Team!</button>
+                        <button type="submit" class="button button1">Join Team!</button>
                       {% endbuttons %}
                       </form>
-                    <div>
-                </div>
 {% endblock %}
