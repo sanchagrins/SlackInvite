@@ -4,6 +4,7 @@
 # ----------------------
 
 import os
+import configparser
 from django.core.exceptions import ImproperlyConfigured
 
 # SECURITY WARNING: Keep you slack token private in production

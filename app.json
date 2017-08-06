@@ -1,0 +1,29 @@
+{
+	"name": "Django Slack-Invite Tool",
+	"description": "A barebones django app for automating the invite process for Slack",
+	"keywords": [
+		"slack",
+		"django",
+		"python"
+        ],
+        "repository": "https://github.com/sanchagrins/SlackInvite"
+	},
+	"env": {
+		"TEAM_NAME": {
+			"description": "Your team name",
+			"value": "TEAM NAME"
+		},
+		"SLACK_URL": {
+			"description": "Your Slack url (ex: django-slackinvite.slack.com)",
+			"value": "TEAM-NAME.slack.com"
+		},
+		"SLACK_TOKEN": {
+			"description": "Slack Token"
+		},
+
+		"SECRET_KEY": {
+			"description": "Django secret key",
+			"generator": "secret"
+		}
+	}
+}
