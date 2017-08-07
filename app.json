@@ -23,6 +23,11 @@
 		"SECRET_KEY": {
 			"description": "Django secret key",
 			"generator": "secret"
+		},
+	"buildpacks": [
+		{
+			"url": "heroku/python"
 		}
-	}
+	]
+	
 }
