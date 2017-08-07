@@ -8,7 +8,7 @@
         ],
         "repository": "https://github.com/sanchagrins/SlackInvite",
 	"env": {
-		"TEAM_NAME": {
+		"SLACK_TEAM": {
 			"description": "Your team name",
 			"value": "TEAM NAME"
 		},
