@@ -6,7 +6,7 @@
 		"django",
 		"python"
         ],
-        "repository": "https://github.com/sanchagrins/SlackInvite/tree/master/slack_invite",
+        "repository": "https://github.com/sanchagrins/SlackInvite",
 	"env": {
 		"TEAM_NAME": {
 			"description": "Your team name",
