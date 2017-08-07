@@ -16,13 +16,13 @@ You can modify the variables found in `settings.cfg` or manually set environment
 Modify the setting in `settings.cfg` as needed:
 
 * SLACK\_TEAM: Your teams Slack name
-* SLACK\_URL: Your slack team url (ex: django-slackinvite.slack.com)
+* SLACK\_URL: Your Slack team url (ex: django-slackinvite.slack.com)
 * SLACK\_TOKEN: Your access token for Slack (see Issue Token)
 
-### Environmet Variables and Heroku
+### Environment Variables and Heroku
 It is posible for Heroku to utilize predifined envrionment variable in a `.env` file for local deployment. For more information on constructing a `.env` file see the official Heroku documentation: [Set up your local environment variables](https://devcenter.heroku.com/articles/heroku-local#set-up-your-local-environment-variables)
 
-For deployed Heroku applications set or modify environment variables using the Heroku CLI or in the Heroku Dashboard:
+For deployed Heroku applications, set or modify environment variables using the Heroku CLI or in the Heroku Dashboard:
 
 `$ heroku config:set SLACK_TEAM="Your Team Name"`
 
@@ -32,12 +32,12 @@ This application supports the use of isolated python envrionments using `virtual
 * [virtualenv](https://virtualenv.pypa.io/en/stable/)
 * [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/index.html)
 
-For more details regarding setting up the Django Slack-Invite App with `virtualenv` and `virtualenvwrapper` please see our official documentaion:
+For more details regarding setting up the Django Slack-Invite App with `virtualenv` and `virtualenvwrapper`, please see our official documentaion:
 
 * [Django Slack-Invite App Official Documentation](link)
 
 ## Run
-First the applicaiton needs to be set up to run locally. Once the app has been verified to run locally, it can easily be deployed to Heroku.
+First the applicaiton needs to be configured to run locally. Once the app has been verified to run locally, it can easily be deployed to Heroku.
 
 ### Running locally
 
@@ -48,7 +48,7 @@ Make sure that you have Python properly installed. Also, install the Heroku Tool
 $ git clone https://github.com/sanchagrins/SlackInvite.git
 $ cd SlackInvite
 ```
-After cloning the repository modify `settings.cfg` as noted above. Then install the required Python packages within your virtual environment and launch your local app.
+After cloning the repository, modify `settings.cfg` as noted above. Then install the required Python packages within your virtual environment and launch your local app.
 
 ```
 $ pip install -r requirements.txt
