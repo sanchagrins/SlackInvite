@@ -14,7 +14,7 @@ def home(request):
             url = 'https://' + config.slack_url + '/api/users.admin.invite'
             form = {'email' : email, 'token' : config.slack_token,
                     'set_active' : 'true'}
-            #r = requests.post(url, data=form)
+            r = requests.post(url, data=form)
             return HttpResponseRedirect('/thanks')
     else:
         form = InviteForm()
