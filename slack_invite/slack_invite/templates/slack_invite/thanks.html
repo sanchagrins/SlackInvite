@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+{# bootstrap_css #}
+{# bootstrap_javascript #}
+
+{# bootstrap_messages #}
+
+{% block head_title %}Django Slack-Invite{% endblock %}
+
+{% block body_text %}
+<img class="img-responsive center-block"  src="{% static 'img/Slack_Mark_Monochrome_WhiteSmall.svg' %}" alt="Slack Logo">
+<h2 class="text-center"><small>Thanks for joining <br>{{ community }} on slack!</small></h2>
+{% endblock %}

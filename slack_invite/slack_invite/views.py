@@ -14,7 +14,7 @@ def home(request):
             url = 'https://' + config.slack_url + '/api/users.admin.invite'
             form = {'email' : email, 'token' : config.slack_token,
                     'set_active' : 'true'}
-            r = requests.post(url, data=form)
+            #r = requests.post(url, data=form)
             return HttpResponseRedirect('/thanks')
     else:
         form = InviteForm()
@@ -23,6 +23,10 @@ def home(request):
 
 def home_files(request, filename):
     return render(request, filename, {}, content_type="text/plain")
+
+def thanks(request):
+    community = config.slack_team
+    return render(request, "slack_invite/thanks.html", {'community': community})
 
 def handler404(request):
     reponse = render_to_response('404.html', {},
